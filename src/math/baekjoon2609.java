@@ -16,17 +16,18 @@ import java.util.Scanner;
 
 public class baekjoon2609 {
     public static int getGCD(int a, int b) {
-        if(b == 0) {
+        if (b == 0) {
             return a;
         } else {
             return getGCD(b, a % b);
         }
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        int gcd = getGCD(a,b);
+        int gcd = getGCD(a, b);
         int lcm = a * b / gcd;
         System.out.println(gcd);
         System.out.println(lcm);

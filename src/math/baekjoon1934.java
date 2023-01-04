@@ -24,7 +24,7 @@ import java.util.Scanner;
 
 public class baekjoon1934 {
     public static int getGCD(int a, int b) {
-        while(b != 0) {
+        while (b != 0) {
             int r = a % b;
             a = b;
             b = r;
@@ -36,7 +36,7 @@ public class baekjoon1934 {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
 
-        for(int i = 0; i < T; i ++) {
+        for (int i = 0; i < T; i++) {
             int a = sc.nextInt();
             int b = sc.nextInt();
             System.out.println(a * b / getGCD(a, b));

@@ -23,7 +23,7 @@ import java.util.Scanner;
 
 public class baekjoon9613 {
     public static int getGCD(int a, int b) {
-        if(b == 0) {
+        if (b == 0) {
             return a;
         } else {
             return getGCD(b, a % b);
@@ -34,16 +34,16 @@ public class baekjoon9613 {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
 
-        for(int i = 0; i < t; i++) {
+        for (int i = 0; i < t; i++) {
             int n = sc.nextInt();
             long sum = 0;
             int[] arr = new int[n];
-            for(int j = 0; j < n; j++) {
+            for (int j = 0; j < n; j++) {
                 arr[j] = sc.nextInt();
             }
 
-            for(int j = 0; j < arr.length - 1; j++) {
-                for(int k = j + 1; k < arr.length; k++) {
+            for (int j = 0; j < arr.length - 1; j++) {
+                for (int k = j + 1; k < arr.length; k++) {
                     sum += getGCD(arr[j], arr[k]);
                 }
             }
