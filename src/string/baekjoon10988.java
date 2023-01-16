@@ -21,9 +21,9 @@ public class baekjoon10988 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
-        String tmp=new StringBuilder(str).reverse().toString();
+        String tmp = new StringBuilder(str).reverse().toString();
         int answer = 0;
-        if(str.equals(tmp)) answer = 1;
+        if (str.equals(tmp)) answer = 1;
         System.out.println(answer);
     }
 }

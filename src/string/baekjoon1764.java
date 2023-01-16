@@ -37,19 +37,19 @@ public class baekjoon1764 {
         HashSet<String> set = new HashSet<>();
         ArrayList<String> answer = new ArrayList<>();
 
-        for(int i = 0 ; i < N; i++) {
+        for (int i = 0; i < N; i++) {
             set.add(sc.nextLine());
         }
 
-        for(int i = 0 ; i < M; i++) {
+        for (int i = 0; i < M; i++) {
             String tmp = sc.nextLine();
-            if(set.contains(tmp)) answer.add(tmp);
+            if (set.contains(tmp)) answer.add(tmp);
         }
 
         Collections.sort(answer);
 
         System.out.println(answer.size());
-        for(String s : answer) {
+        for (String s : answer) {
             System.out.println(s);
         }
     }
